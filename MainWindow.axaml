@@ -1,0 +1,205 @@
+
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1980" d:DesignHeight="1024" MinWidth="1980" MaxWidth="1980" MinHeight="1024" MaxHeight="1024"
+        x:Class="vvedenienomera.MainWindow"
+        Title="vvedenienomera">
+	<Grid
+		ShowGridLines="False"
+		RowDefinitions="50,300,100,50,50"
+		ColumnDefinitions="50,100,55,100,100,135,135,200,50,100,55,100,100,155,155,155,155,155"
+		>
+		<StackPanel Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+			<TextBlock FontSize="18" Width="350" x:Name="nomers"  >
+				Введите ваш номер телефона:
+        </TextBlock>
+		
+		</StackPanel>
+
+		<StackPanel  Grid.Column="2" Grid.Row="3"  VerticalAlignment="Top">
+			<Button  FontSize="15" Width="150" Click="podtverjd" >
+				Подтвердить
+			</Button>
+			
+		</StackPanel>
+		<StackPanel  Grid.Column="4" Grid.Row="3"  VerticalAlignment="Top">
+			<Button  FontSize="15"  HorizontalAlignment="Left" Click="Sbros" >
+				Сбросить
+			</Button>
+		</StackPanel>
+		<StackPanel  Grid.Column="1" Grid.Row="3" Width="60">
+			<Button  FontSize="15"  HorizontalAlignment="Right"  Click="NumberPlus">
+				+
+			</Button>
+			
+		</StackPanel>
+		<StackPanel  Grid.Column="1" Grid.Row="3" Width="60" >
+			<Button  FontSize="15"  HorizontalAlignment="Left" Click="NumberMinus" >
+				-
+			</Button>
+		</StackPanel>
+		
+		<StackPanel  Grid.Column="3" Grid.Row="2" VerticalAlignment="Center" >
+			<TextBlock FontSize="25" Width="235"  HorizontalAlignment="Right" >
+				<MaskedTextBox x:Name="nomertel" Mask="+0(000)000-00-00" />
+			</TextBlock>
+		</StackPanel>
+		<StackPanel Grid.Column="7" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom">
+			<TextBlock FontSize="18" Width="350" x:Name="nomers1"  >
+				Ваш номер телефона?:11111111111
+			</TextBlock>
+		</StackPanel>
+		<StackPanel  Grid.Column="7" Grid.Row="3" Width="60">
+			<Button  FontSize="15"  HorizontalAlignment="Right" Click="podtverjd2" >
+				Да
+			</Button>
+			</StackPanel>
+			<StackPanel  Grid.Column="7" Grid.Row="3" Width="160">
+				<Button  FontSize="15"  HorizontalAlignment="Left" Click="Numberrandom" >
+					Нет
+				</Button>
+
+		</StackPanel>
+		<StackPanel Grid.Column="14" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" >
+			<TextBlock FontSize="18" Width="350" x:Name="xname" >
+				Введите ваш номер телефона: 
+			</TextBlock>
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="13" Grid.Row="2" x:Name="x1"  >
+			<CheckBox x:Name="s1">1</CheckBox>
+			<CheckBox x:Name="s2">2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>							
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="13" Grid.Row="2" HorizontalAlignment="Center" x:Name="x2">
+			<CheckBox>0</CheckBox>
+			<CheckBox>1</CheckBox>
+			<CheckBox>2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="13" Grid.Row="2" HorizontalAlignment="Right" x:Name="x3">
+			<CheckBox>0</CheckBox>
+			<CheckBox>1</CheckBox>
+			<CheckBox>2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="14" Grid.Row="2"  x:Name="x4">
+			<CheckBox>0</CheckBox>
+			<CheckBox>1</CheckBox>
+			<CheckBox>2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="14" Grid.Row="2" HorizontalAlignment="Center"  x:Name="x5">
+			<CheckBox>0</CheckBox>
+			<CheckBox>1</CheckBox>
+			<CheckBox>2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="14" Grid.Row="2" HorizontalAlignment="Right"  x:Name="x6">
+			<CheckBox>0</CheckBox>
+			<CheckBox>1</CheckBox>
+			<CheckBox>2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="15" Grid.Row="2"  x:Name="x7">
+			<CheckBox>0</CheckBox>
+			<CheckBox>1</CheckBox>
+			<CheckBox>2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="15" Grid.Row="2" HorizontalAlignment="Center"  x:Name="x8">
+			<CheckBox>0</CheckBox>
+			<CheckBox>1</CheckBox>
+			<CheckBox>2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="15" Grid.Row="2" HorizontalAlignment="Right"  x:Name="x9">
+			<CheckBox>0</CheckBox>
+			<CheckBox>1</CheckBox>
+			<CheckBox>2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="16" Grid.Row="2"  x:Name="x10">
+			<CheckBox>0</CheckBox>
+			<CheckBox>1</CheckBox>
+			<CheckBox>2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>
+		</StackPanel>
+		<StackPanel Margin="5" Grid.Column="16" Grid.Row="2" HorizontalAlignment="Center" x:Name="x11">
+			<CheckBox>0</CheckBox>
+			<CheckBox>1</CheckBox>
+			<CheckBox>2</CheckBox>
+			<CheckBox>3</CheckBox>
+			<CheckBox>4</CheckBox>
+			<CheckBox>5</CheckBox>
+			<CheckBox>6</CheckBox>
+			<CheckBox>7</CheckBox>
+			<CheckBox>8</CheckBox>
+			<CheckBox>9</CheckBox>
+		</StackPanel>
+		
+		
+	</Grid>
+</Window>
